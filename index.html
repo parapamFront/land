@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Landing page"/>
+	<meta property="og:description" content="Adaptive landing page" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://parapam-front.github.io/"/>
+	<meta property="og:image"content="https://parapam-front.github.io/app/img/facebook.jpg"/>
+	<meta property="og:image:secure_url" content="https://parapam-front.github.io/app/img/facebook.jpg" />
+	<meta property="vk:image" content="https://parapam-front.github.io/app/img/benefits.png" />
+	<title>Document</title>
+	<link rel="shortcut icon" href="app/img/Favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="app/css/normalize.css">
+	<link rel="stylesheet" href="app/css/main.css">
+	<link rel="stylesheet" href="slick/slick.css">	
+	<link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<body>
+	<div class="navpopup" id="popup">
+		
+		<nav class="nav__mobile">
+			<div class="nav__blocks">
+				<div class="nav__logo-block">
+					<a href="#" class="nav__logo-mobile">
+						<img src="app/img/media/header/logo.png" alt="logo" class="nav__logo-img-mobile"> <span class="nav__logo-name">mightycall</span>
+					</a>
+				</div>
+					<button class="nav__burger-mobile" @click="upPopup = true">
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+					</button>
+			</div>
+		</nav>
+		<div class="popup" v-show="upPopup">
+			<div class="popup__logocontainer">
+				<div class="popup__logoblock"><img src="app/img/media/popup/logo.png" alt="logopopup"> <span class="popup__logo-name">mightycall</span></div>
+				<div class="popup__close" @click="upPopup = false"></div>
+			</div>
+			<ul class="popup__link-container">
+				<li class="popup__link-block"><a href="#" class="popup__link">why mightycall</a></li>
+				<li class="popup__link-block"><a href="#" class="popup__link">features</a></li>
+				<li class="popup__link-block"><a href="#" class="popup__link">prices</a></li>
+				<li class="popup__link-block"><a href="#" class="popup__link">our blog</a></li>
+			</ul>
+			<div class="popup__buttons-block">
+				<button class="popup__button">free trial</button>
+				<button class="popup__button popup__button-bottom ">sign in</button>
+			</div>
+		</div>
+
+
+
+	</div>
+	<header>
+		<nav class=nav__desktop>
+			<div class="nav__blocks">
+				<div class="nav__logo-block">
+					<a href="#" class="nav__logo">
+						<img src="app/img/logo.png" alt="logo" class="nav__logo-img"> <span class="nav__logo-name">mightycall</span>
+					</a>
+					<a href="#" class="nav__whymightcall nav__link-style nav__link-size">Why mightcall</a>
+				</div>
+				<div class="nav__navigation-block">
+					<button class="nav__burger-mobile">
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+					</button>
+					<ul class="nav__menu">
+						<li class="nav__menu-features nav__link-size"><a href="#"class="nav__link-style">Features</a></li>
+						<li class="nav__menu-prices nav__link-size"><a href="#"class="nav__link-style">Prices</a></li>
+						<li class="nav__menu-blog nav__link-size"><a href="#"class="nav__link-style">Blog</a></li>
+						<li class="nav__menu-signin nav__link-size"><a href="#" class="nav__link-style">Sign in</a></li>
+					</ul>
+					<button class="nav__free-trial all__button">
+						free trial
+					</button>
+				</div>
+			</div>
+		</nav>
+		<div class="header__content">
+			<div class="header__title-block">
+				<div class="header__img-block-mobile">
+					<div class="border1">
+						<div class="border2">
+							<div class="border3"></div>
+						</div>
+					</div>
+					<div class="header__img-mobile">
+					</div>
+				</div>
+				<div class="header__main-title">
+					<span class="green-text">online</span> <br>	 phone number + voip for your business
+				</div>
+				<div class="header__minititle-block">
+					<div class="header__mini-title">Get a MightyCall</div>
+					<div class="header__mini-subtitle">phone number for online calls and texting</div>
+				</div>
+				<div class="header__minititle-block">
+					<div class="header__mini-title">Get a local or toll-free</div>
+					<div class="header__mini-subtitle">phone number to focus your business either nationally or locally</div>
+				</div>
+				<div class="header__button-block">
+					<button class="header__button-left all__button">free trial</button>
+					<button class="header__button-right all__button">book demo</button>
+				</div>
+			</div>
+			<div class="header__imggroup-container">
+				
+				<div class="border1">
+					<div class="border2">
+						<div class="border3"></div>
+					</div>
+				</div>
+				<div class="header__img-block">
+					<img src="app/img/Handphone.png" alt="handphone" class="header__img">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="descr-online">
+		<div class="descr-online__container">
+			<div class="descr-online__main-title">
+				What is an online number?
+			</div>
+			<div class="descr-online__advantages-container">
+				<div class="descr-online__advantages-block">
+					<div class="descr-online__img-container">
+						<div class="descr-online__img-wrapper">
+							<img src="app/img/descronline1.svg" alt="onlinesvg">
+						</div>
+					</div>
+					<div class="descr-online__text-container">
+						<span class="color-blue">An online phone number</span> is a number that, instead <br> of being attached to a mobile phone or a landline, <span class="color-blue"> <br> is attached to an account.</span>
+					</div>
+				</div>
+				<div class="descr-online__advantages-block">
+					<div class="descr-online__img-container">
+						<div class="descr-online__img-wrapper">
+							<img src="app/img/descronline2.svg" alt="onlinesvg">
+						</div>
+					</div>
+					<div class="descr-online__text-container">
+						<span class="color-blue">This allows for greater flexibility </span> than offered with traditional phone numbers, as you can use an <br> online phone number with multiple devices, making br it easier<span class="color-blue"> to make and receive calls anywhere.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="benefits">
+		<div class="benefits__bg-container">
+			<div class="benefits__title">What are the benefits of using a MightyCall <span class="style-bold">online phone number</span> for business?</div>
+			<div class="benefits__img-container">
+				<img src="app/img/media/benefits/benefitsimg.png" alt="benefitsimg" class="benefits__img">
+			</div>
+			<div class="benefits__descr-container">
+				<div class="benefits__descr-block">
+						<div class="benefits__descr-title">
+							Keep your personal number private
+						</div>
+						<div class="benefits__descr-subtitle">
+							Get toll-free and local business numbers
+						</div>
+				</div>
+				<div class="benefits__descr-block">
+						<div class="benefits__descr-title">
+							Keep your business running afterhours
+						</div>
+						<div class="benefits__descr-subtitle">
+							After-hours call routing means no call is ever lost
+						</div>
+				</div>
+				<div class="benefits__descr-block">
+						<div class="benefits__descr-title">
+							Work from anywhere
+						</div>
+						<div class="benefits__descr-subtitle">
+							Make and receive calls on any device of your choosing
+						</div>
+				</div>
+				<div class="benefits__descr-block">
+						<div class="benefits__descr-title benefits__descr-title-lineheight">
+							Stay in touch with customers with online text messages
+						</div>
+						<div class="benefits__descr-subtitle">
+							Unlimited texts are included in every plan
+						</div>
+				</div>
+			</div>
+	</section>
+	<section class="whybuy">
+		<div class="whybuy__container">
+			<div class="whybuy__title">
+				Why buy an online phone number from MightyCall?
+			</div>
+			<div class="whybuy__descr-container">
+				<div class="whybuy__descr-block">
+					<div class="whybuy__descrimg-container">
+						<div class="whybuy__descrimg-wrapper">
+							<img src="app/img/whybuy/descr/1.svg" alt="whybuysvg">
+						</div>
+					</div>
+					<div class="whybuy__descrtext-container">
+						<div class="whybuy__descrtext-title">All VoIP functions included</div>
+						<div class="whybuy__descrtext-subtitile">Call forwarding, visual voicemail, <br> auto-attendant, etc</div>	
+					</div>
+				</div>
+				<div class="whybuy__descr-block">
+					<div class="whybuy__descrimg-container">
+						<div class="whybuy__descrimg-wrapper">
+							<img src="app/img/whybuy/descr/2.svg" alt="whybuysvg">
+						</div>
+					</div>
+					<div class="whybuy__descrtext-container">
+						<div class="whybuy__descrtext-title">Instant activation</div>
+						<div class="whybuy__descrtext-subtitile">Instant activation</div>	
+					</div>
+				</div>
+				<div class="whybuy__descr-block">
+					<div class="whybuy__descrimg-container">
+						<div class="whybuy__descrimg-wrapper">
+							<img src="app/img/whybuy/descr/3.svg" alt="whybuysvg">
+						</div>
+					</div>
+					<div class="whybuy__descrtext-container">
+						<div class="whybuy__descrtext-title">Free Vanity number</div>
+						<div class="whybuy__descrtext-subtitile">Make and receive calls on any device <br> of your choosing</div>	
+					</div>
+				</div>
+				<div class="whybuy__descr-block">
+					<div class="whybuy__descrimg-container">
+						<div class="whybuy__descrimg-wrapper">
+							<img src="app/img/whybuy/descr/4.svg" alt="whybuysvg">
+						</div>
+					</div>
+					<div class="whybuy__descrtext-container">
+						<div class="whybuy__descrtext-title">Port your number</div>
+						<div class="whybuy__descrtext-subtitile">The number is yours. Port it in or out for free</div>	
+					</div>
+				</div>
+				<div class="whybuy__descr-block">
+					<div class="whybuy__descrimg-container">
+						<div class="whybuy__descrimg-wrapper">
+							<img src="app/img/whybuy/descr/5.svg" alt="whybuysvg">
+						</div>
+					</div>
+					<div class="whybuy__descrtext-container">
+						<div class="whybuy__descrtext-title">Toll-free & local numbers</div>
+						<div class="whybuy__descrtext-subtitile">Toll-free number for national presence and <br> local numbers for local presence</div>	
+					</div>
+				</div>
+				<div class="whybuy__descr-block">
+					<div class="whybuy__descrimg-container">
+						<div class="whybuy__descrimg-wrapper">
+							<img src="app/img/whybuy/descr/6.svg" alt="whybuysvg">
+						</div>
+					</div>
+					<div class="whybuy__descrtext-container">
+						<div class="whybuy__descrtext-title">Unlimited users</div>
+						<div class="whybuy__descrtext-subtitile">Add your team. <br> Unlimited extensions in every plan</div>	
+					</div>
+				</div>
+			</div>
+			<div class="whybuy__reviews-container">
+				<div class="whybuy__reviews-block">
+					<div class="whybuy__reviews-img-wrapper">
+						<img src="app/img/whybuy/reviews/Frame 112.png" alt="whybuy">
+					</div>
+					<div class="whybuy__reviews-text">I love that I can set up my <br> business hours and receive calls only during those hours. <br> I like that I’ve been able to keep business and personal separate</div>
+					<div class="whybuy__reviews-userdata">
+						<div class="whybuy__reviews-username">Sandra Balzola</div>
+						<div class="whybuy__reviews-usercompany">Red Sand Studios, LLC</div>
+					</div>
+				</div>
+				<div class="whybuy__reviews-block">
+					<div class="whybuy__reviews-img-wrapper">
+						<img src="app/img/whybuy/reviews/Frame 113.png" alt="whybuy">
+					</div>
+					<div class="whybuy__reviews-text">Cannot go wrong with this <br> service. We've been using them <br> for over a year. The system has eliminated all robo calls</div>
+					<div class="whybuy__reviews-userdata">
+						<div class="whybuy__reviews-username">Varga Gulshani</div>
+						<div class="whybuy__reviews-usercompany">Elegant Painting</div>
+					</div>
+				</div>
+				<div class="whybuy__reviews-block">
+					<div class="whybuy__reviews-img-wrapper">
+						<img src="app/img/whybuy/reviews/Frame 114.png" alt="whybuy">
+					</div>
+					<div class="whybuy__reviews-text whybuy__reviews-text-width">It’s a huge plus that my managers can use MightyCall on their phones to return calls without their personal numbers showing</div>
+					<div class="whybuy__reviews-userdata">
+						<div class="whybuy__reviews-username">Brannon Riceci</div>
+						<div class="whybuy__reviews-usercompany">BokeBowl</div>
+					</div>
+				</div>
+				<div class="whybuy__reviews-block">
+					<div class="whybuy__reviews-img-wrapper">
+						<img src="app/img/whybuy/reviews/Frame 115.png" alt="whybuy">
+					</div>
+					<div class="whybuy__reviews-text">MightyCall saves us up to six times what it costs us. <br> That’s a no-brainer for me</div>
+					<div class="whybuy__reviews-userdata">
+						<div class="whybuy__reviews-username">Will Schinagl</div>
+						<div class="whybuy__reviews-usercompany">Simple Stroller Rental</div>
+					</div>
+				</div>
+			</div>
+			<div class="whybuy__slider-overlay">
+				<div class="whybuy__reviews-container-mobile">
+					<div class="whybuy__reviews-block">
+						<div class="whybuy__reviews-img-wrapper">
+							<img src="app/img/whybuy/reviews/Frame 112.png" class="whybuy__reviews-img" alt="whybuy">
+						</div>
+						<div class="whybuy__reviews-text">I love that I can set up my <br> business hours and receive calls only during those hours. <br> I like that I’ve been able to keep business and personal separate</div>
+						<div class="whybuy__reviews-userdata">
+							<div class="whybuy__reviews-username">Sandra Balzola</div>
+							<div class="whybuy__reviews-usercompany">Red Sand Studios, LLC</div>
+						</div>
+					</div>
+					<div class="whybuy__reviews-block">
+						<div class="whybuy__reviews-img-wrapper">
+							<img src="app/img/whybuy/reviews/Frame 113.png" class="whybuy__reviews-img" alt="whybuy">
+						</div>
+						<div class="whybuy__reviews-text">Cannot go wrong with this <br> service. We've been using them <br> for over a year. The system has eliminated all robo calls</div>
+						<div class="whybuy__reviews-userdata">
+							<div class="whybuy__reviews-username">Varga Gulshani</div>
+							<div class="whybuy__reviews-usercompany">Elegant Painting</div>
+						</div>
+					</div>
+					<div class="whybuy__reviews-block">
+						<div class="whybuy__reviews-img-wrapper">
+							<img src="app/img/whybuy/reviews/Frame 114.png" class="whybuy__reviews-img" alt="whybuy">
+						</div>
+						<div class="whybuy__reviews-text whybuy__reviews-text-width">It’s a huge plus that my managers can use MightyCall on their phones to return calls without their personal numbers showing</div>
+						<div class="whybuy__reviews-userdata">
+							<div class="whybuy__reviews-username">Brannon Riceci</div>
+							<div class="whybuy__reviews-usercompany">BokeBowl</div>
+						</div>
+					</div>
+					<div class="whybuy__reviews-block">
+						<div class="whybuy__reviews-img-wrapper">
+							<img src="app/img/whybuy/reviews/Frame 115.png" class="whybuy__reviews-img" alt="whybuy">
+						</div>
+						<div class="whybuy__reviews-text">MightyCall saves us up to six times what it costs us. <br> That’s a no-brainer for me</div>
+						<div class="whybuy__reviews-userdata">
+							<div class="whybuy__reviews-username">Will Schinagl</div>
+							<div class="whybuy__reviews-usercompany">Simple Stroller Rental</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="getnumber">
+		<div class="getnumber__container">
+			<div class="getnumber__title">
+				Get an online phone number for <br> <span class="getnumber__span"> your business</span> now!
+			</div>
+			<div class="getnumber__advantages">No contract. No hardware needed</div>
+			<div class="getnumber__buttons-container">
+				<button class="getnumber__button-left all__button">free trial</button>
+				<button class="getnumber__button-right all__button">book demo</button>
+			</div>
+		</div>
+	</section>
+	<section class="devices">
+		<div class="devices__container">
+			<div class="devices__block-option">
+				<div class="devices__option-content">
+					<div class="devices__option-title">What devices can I use MightyCall’s online phone number with?</div>
+					<div class="devices__option-subtitle">You can use MightyCall on any device you want:</div>
+					<div class="devices__option-imgblock">
+						<img src="app/img/media/devices/mainimg.png" alt="mainmobile" class="devices__option-img-mobile">
+						<img src="app/img/devices/optionimg.png" alt="optionimg" class="devices__option-img">
+						<div class="devices__option-img-descr">Unlike other VoIP providers, we don’t limit you to the number of devices you can sign-in on either, so you’ll have complete freedom.</div>
+					</div>
+				</div>
+				<div class="devices__grades-content">
+					<div class="devices__grades-box">
+						<div class="devices__logo-box">
+							<img src="app/img/media/devices/grades1.svg" alt="" class="devices__grades-img-mobile">
+							<img src="app/img/devices/Vector.svg" class="devices__grades-img" alt="vector">
+						</div>
+						<div class="devices__star-box">
+							<div class="devices__star-wrapper">
+								<img src="app/img/media/devices/star1.svg" alt="" class="devices__grades-img-mobile">
+								<img src="app/img/devices/star1.svg" class="devices__grades-img" alt="star">
+								<div class="devices__star-descr">4 out of 5 stars</div>
+							</div>
+						</div>
+					</div>
+					<div class="devices__grades-box">
+						<div class="devices__logo-box">
+							<img src="app/img/media/devices/grades2.svg" alt="" class="devices__grades-img-mobile">
+							<img src="app/img/devices/Vector-1.svg" class="devices__grades-img" alt="vector">
+						</div>
+						<div class="devices__star-box">
+							<div class="devices__star-wrapper">
+								<img src="app/img/media/devices/star2.svg" alt="" class="devices__grades-img-mobile">
+								<img src="app/img/devices/star2.svg" class="devices__grades-img" alt="star">
+								<div class="devices__star-descr">4.2 out of 5 stars</div>
+							</div>
+						</div>
+					</div>
+					<div class="devices__grades-box">
+						<div class="devices__logo-box">
+							<img src="app/img/media/devices/grades3.svg" alt="" class="devices__grades-img-mobile">
+							<img src="app/img/devices/Vector-2.svg" class="devices__grades-img" alt="vector">
+						</div>
+						<div class="devices__star-box">
+							<div class="devices__star-wrapper">
+								<img src="app/img/media/devices/star3.svg" alt="" class="devices__grades-img-mobile">
+								<img src="app/img/devices/star3.svg" class="devices__grades-img" alt="star">
+								<div class="devices__star-descr">4.7 out of 5 stars</div>
+							</div>
+						</div>
+					</div>
+					<div class="devices__grades-box">
+						<div class="devices__logo-box">
+							<img src="app/img/media/devices/grades4.svg" alt="" class="devices__grades-img-mobile">
+							<img src="app/img/devices/Vector-3.svg" class="devices__grades-img" alt="vector">
+						</div>
+						<div class="devices__star-box">
+							<div class="devices__star-wrapper">
+								<img src="app/img/media/devices/star4.svg" alt="" class="devices__grades-img-mobile">
+								<img src="app/img/devices/star4.svg" class="devices__grades-img" alt="star">
+								<div class="devices__star-descr">4.2 out of 5 stars</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="devices__block-faq">
+				<div class="devices__faq-title">fAQ</div>
+				<div class="devices__faq-content">
+					<div class="devices__faq-box">
+						<div class="devices__faq-wrapper">
+							<div class="devices__faq-question">Are online phone numbers “real” telephone <br> numbers though?</div>
+							<div class="devices__faq-answer">This is an understandable question, as oftentimes people like to be able to physically hold their media, and for many, their cell phone equals their telephone number. Rest assured, online numbers are just as real as any mobile or landline number</div>
+							<div class="devices__faq-question-mobile">Do I need any hardware to use with a small business phone system from MightyCall?</div>
+							<div class="devices__faq-answer-mobile">All you need is a computer (or phone), some sort of microphone, and some sort of way to listen to the sound (like headphones)</div>
+						</div>
+					</div>
+					<div class="devices__faq-box">
+						<div class="devices__faq-wrapper">
+							<div class="devices__faq-question">Can I get toll free or vanity numbers when buying online numbers?</div>
+							<div class="devices__faq-answer">Absolutely you can! VOIP/Telephony companies will be happy to sell you all sorts of toll free and vanity numbers.</div>
+							<div class="devices__faq-question-mobile">Benefits of getting MightyCall</div>
+							<div class="devices__faq-answer-mobile">Unlike other small busienss phone systems, we're staying on the crest of the technological wave while simultaneously keeping our plans affordable for small business owners</div>
+						</div>
+					</div>
+					<div class="devices__faq-box">
+						<div class="devices__faq-wrapper">
+							<div class="devices__faq-question">What if I decide to change VoIP providers? <br> Will I lose my number?</div>
+							<div class="devices__faq-answer">This is a common worry; small businesses who have for years built their brand on a single number could be thrown for a loop if suddenly that was taken away. Rest assured, it isn’t a problem; some companies will port your numbers for free, some for a nominal fee. But nonetheless you can be sure that you can port your number, taking it with you wherever you go, both metaphorically and literally.</div>
+							<div class="devices__faq-question-mobile">What is VoIP?</div>
+							<div class="devices__faq-answer-mobile">VoIP stands for Voice over Internet Protocol, and is the technology that allows phone calls and other information to be transmitted through the internet. This allows for much more flexibility and often, efficiency, in communications.</div>
+						</div>
+					</div>
+					<div class="devices__faq-box">
+						<div class="devices__faq-wrapper">
+							<div class="devices__faq-question">So can I only use online numbers on my computer, on a website?</div>
+							<div class="devices__faq-answer">You can use online numbers on a website, yes, but, if your telephony company offers it, you can also use them on your cell phone/cell phone app! Some also allow you to use softphone software, which is essentially a telephone program on your computer. Using anything on your computer will of course require having access to a microphone and speakers/listening system</div>
+							<div class="devices__faq-question-mobile">Can I get a toll free phone number with a small business phone system?</div>
+							<div class="devices__faq-answer-mobile">Yes! MightyCall carries tons of toll free virtual phone numbers- it's just as easy to get one as it is to get any virtual phone number (which is to say- very easy!)</div>
+						</div>
+					</div>
+					<div class="devices__faq-box">
+						<div class="devices__faq-wrapper">
+							<div class="devices__faq-question">What if I want to buy an online number with an area code that doesn’t correspond to my local area?</div>
+							<div class="devices__faq-answer">This is no issue whatsoever. In fact, many businesses buy online numbers which have area codes of localities other than where they are located. This allows them to be more accepted into a community and to not seem like some far off, alien company coming into someone’s small town.</div>
+							<div class="devices__faq-question-mobile">Can I have multiple virtual phone numbers? with my small business phone system?</div>
+							<div class="devices__faq-answer-mobile">You can have as many virtual phone numbers as your heart desires. All MightyCall plans come with at least two.</div>
+						</div>
+					</div>
+					<div class="devices__faq-box">
+						<div class="devices__faq-wrapper">
+							<div class="devices__faq-question">I’m old-school. I like the flexibility of online numbers but I want to still use my corded office phone. Can I do so?</div>
+							<div class="devices__faq-answer">You sure can! It’ll take some setting up, but you can set up your online number to work with corded office phones.</div>
+							<div class="devices__faq-question-mobile">What does the mini-CRM feature offer?</div>
+							<div class="devices__faq-answer-mobile">This feature has several huge things going on, mainly an upgraded way to create and store business contact lists and a note-taking feature that allows you to keep track of every single contact and individual interaction.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="getnumber">
+		<div class="getnumber__container">
+			<div class="getnumber__title">
+				Get an online phone number for <span class="getnumber__span"> your business</span> now!
+			</div>
+			<div class="getnumber__advantages">No contract. No hardware needed</div>
+			<div class="getnumber__buttons-container">
+				<button class="getnumber__button-left all__button">free trial</button>
+				<button class="getnumber__button-right all__button">book demo</button>
+			</div>
+		</div>
+	</section>
+	<section class="select">
+		<div class="select__container">
+			<div class="select__number-block">
+				<a href="#" class="select__number-link">
+					<span class="number-link__text">Give us call</span> <span class="number-link__number">+1 (888) 256-83-12</span>
+				</a>
+			</div>
+			<ul class="select__select-block" id="app">
+				<li class="select__select-father" @mouseover="upFeatures = true" @mouseleave="upFeatures = false">
+					<span class="select__selector">features</span>
+					<div class="select__select-linkblock select-linkblock__transform1" v-show="upFeatures">
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">support</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">features</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">voip</div></a>
+					</div>
+				</li>
+				<li class="select__select-father" @mouseover="upSupport = true" @mouseleave="upSupport = false">
+					<span class="select__selector">Support</span>
+					<div class="select__select-linkblock select-linkblock__transform2" v-show="upSupport">
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">support</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">features</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">voip</div></a>
+					</div>
+				</li>
+				<li class="select__select-father" @mouseover=" upBusiness = true" @mouseleave=" upBusiness = false">
+					<span class="select__selector">business number</span>
+					<div class="select__select-linkblock select-linkblock__transform3" v-show="upBusiness">
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">support</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">features</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">voip</div></a>
+					</div>
+				</li>
+				<li class="select__select-father" @mouseover="upVoip = true" @mouseleave="upVoip = false">
+					<span class="select__selector">voip</span>
+					<div class="select__select-linkblock select-linkblock__transform4" v-show="upVoip">
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">support</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">features</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">voip</div></a>
+					</div>
+				</li>
+				<li class="select__select-father" @mouseover="upLocal = true" @mouseleave="upLocal = false">
+					<span class="select__selector">local numbers</span>
+					<div class="select__select-linkblock select-linkblock__transform5" v-show="upLocal">
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">support</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">features</div></a>
+						<a href="#" class="select__Select-link-container"><div class="select__Select-link">voip</div></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="contacts">
+		<div class="contacts__logolink-box">
+			<a href="#" class="logolink__mainlogo-box">
+				<img src="app/img/media/footer/logo.png" alt="mainlogomobile" class="logolink__mainlogo-img-mobile">
+				<img src="app/img/contacts/mainlogo.png" alt="mainlogo" class="logolink__mainlogo-logo"> <span class="logolink__mainlogo-name">mightycall</span>
+			</a>
+			<div class="contacts__logosocial-box">
+				<div class="logosocial__first">
+					<a href="#" class="logosocial-link"><img src="app/img/contacts/1.svg" alt="fb" class="logolink__mainlogo-img"></a>
+					<a href="#" class="logosocial-link"><img src="app/img/contacts/2.svg" alt="yt" class="logolink__mainlogo-img"></a>
+					<a href="#" class="logosocial-link"><img src="app/img/contacts/3.svg" alt="tw" class="logolink__mainlogo-img"></a>
+					<a href="#" class="logosocial-link"><img src="app/img/contacts/4.svg" alt="in" class="logolink__mainlogo-img"></a>
+				</div>
+				<div class="logosocial__second">
+					<a href="#" class="logosocial-link"><img src="app/img/contacts/5.svg" alt="apple" class="logolink__mainlogo-img"></a>
+					<a href="#" class="logosocial-link"><img src="app/img/contacts/6.svg" alt="andr" class="logolink__mainlogo-img"></a>
+				</div>
+			</div>
+			<div class="logosocial__third-deadsoul"></div>
+		</div>
+		<div class="contacts__link-container">
+			<div class="contacts__link-box">
+				<div class="footer__textlinks">
+					<a href="#" class="footer__textlink">terms of service</a>
+					<a href="#" class="footer__textlink">privacy policy</a>
+					<a href="#" class="footer__textlink">partners</a>
+					<a href="#" class="footer__textlink">contacts</a>
+				</div>
+				<div class="footer__textlink footer__textlink-rights">@ 2019 mightycall</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app/js/main.js"></script>
+	<script src="app/js/second.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="app/js/jq.js"></script>
+	</script>
+</body>
+</html>
+
